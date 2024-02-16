@@ -116,5 +116,10 @@ if ! shopt -oq posix; then
   fi
 fi
 
+##### MY STUFF
+# change editor
 export EDITOR='/bin/nvim'
 export VISUAL='/bin/nvim'
+
+# Auto-start keychain which loads ssh keys
+eval $(keychain --noask -q)
